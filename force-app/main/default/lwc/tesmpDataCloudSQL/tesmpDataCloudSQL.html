@@ -1,0 +1,13 @@
+<template>
+    <div>
+        <h2>Account Details</h2>
+        <template for:each={dataList} for:item="dataEntry">
+            <div key={dataEntry.Id}>
+                <p>Amount: {dataEntry.Amount__c}</p>
+                <p>Status: {dataEntry.Status__c}</p>
+                <p>Method: {dataEntry.Method__c}</p>
+                <p>Payment Date: {dataEntry.PaymentDate__c}</p>
+            </div>
+        </template>
+    </div>
+</template>

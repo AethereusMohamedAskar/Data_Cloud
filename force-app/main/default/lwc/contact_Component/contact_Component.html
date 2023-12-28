@@ -1,0 +1,81 @@
+<template>
+	<div class="container" style="height:100% !important">
+
+		<template lwc:if={contact}>
+			<div class="contact-details">
+				<div class="contact-header">
+					<div class="contact-image">
+						<img src="https://aethereusconsulting-6c.file.force.com/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId=068Dp000004u81i&operationContext=CHATTER&contentId=05TDp00000IQyCV" alt={contact.Name} />
+        			</div>
+						<div class="contact-name">{name}</div>
+
+					</div>
+					<div class="contact-country">Mumbai</div>
+					<div class="contact-info">
+						<div class="contact-info-item">
+
+							<span class="label">Email Address </span>
+							<span class="value">{email}</span>
+						</div>
+						<!--<div class="contact-info-item">
+							<span class="label">Customer Id </span>
+							<span class="value" style="font-size:12px;">{customerid}</span>
+						</div>-->
+						<div class="contact-info-item">
+							<span class="label">Phone </span>
+							<span class="value">{phone}</span>
+						</div>
+						<div class="contact-info-item">
+							<span class="label">Address </span>
+							<span class="value">{address}</span>
+						</div>
+						<hr class="horizontal-line">
+						<div style="margin-top:-20px;">
+							<span class="label">Lifetime Value</span>
+							<span class="value">1,00,000</span>
+						</div>
+						<div style="margin-top:10px;">
+							<span class="label">Propensity to Renew:</span>
+							<span class="value">74% </span>
+							<div class="progress-bar">
+								<div class="progress" style="width: 74%;"></div>
+							</div>
+						</div>
+						<div style="margin-top:10px;">
+							<span class="label">Probability to Cross-Sell:</span>
+							<span class="value">78%</span><br>
+							<div class="progress-bar">
+								<div class="progress" style="width: 78%;"></div>
+							</div>
+						</div>
+						<hr class="horizontal-line">
+						<div style="margin-top:-20px;">
+							<span class="label">Last Transaction</span>
+							<span class="value">Rs 10,000</span>
+						</div>
+						<div style="margin-top:10px;">
+							<span class="label">Status</span>
+							<span class="value">Active</span>
+						</div>
+						<div style="margin-top:10px;">
+							<span class="label">No of Referrals</span>
+							<span class="value">2</span>
+						</div>
+						<div style="margin-top:10px;">
+							<span class="label">No of Renewals</span>
+							<span class="value">1</span>
+						</div>
+						<div style="margin-top:10px;">
+							<span class="label">CSAT Score</span>
+							<span class="value">80%</span>
+						</div>
+
+
+
+
+					</div>
+				</div>
+		</template>
+	</div>
+
+</template>

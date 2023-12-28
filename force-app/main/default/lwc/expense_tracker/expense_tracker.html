@@ -1,37 +1,13 @@
-<!-- expenseTable.html -->
 <template>
-    <div class="slds-container">
-        <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_col-bordered">
-            <thead>
-                <tr class="slds-line-height_reset">
-                    <th class="slds-text-title_caps" scope="col">
-                        <div class="slds-truncate" title="Expense Name">Expense Name</div>
-                    </th>
-                    <th class="slds-text-title_caps" scope="col">
-                        <div class="slds-truncate" title="Amount">Amount</div>
-                    </th>
-                    <th class="slds-text-title_caps" scope="col">
-                        <div class="slds-truncate" title="Date">Date</div>
-                    </th>
-                    <!-- Add more headers based on your Expense fields -->
-                </tr>
-            </thead>
-            <tbody>
-                
-                    <tr class="slds-hint-parent">
-                        <td data-label="Expense Name">
-                            <div class="slds-truncate" title="expensetitle">Travel</div>
-                        </td>
-                        <td data-label="Amount">
-                            <div class="slds-truncate" title=amount>200</div>
-                        </td>
-                        <td data-label="Date">
-                            <div class="slds-truncate" title=date>20/12/2023</div>
-                        </td>
-                        <!-- Add more cells based on your Expense fields -->
-                    </tr>
-                
-            </tbody>
-        </table>
-    </div>
+    <lightning-card >
+       <lightning-tabset variant="standard" active-tab-value="two">
+           <lightning-tab label="My Expense" value="My Expense">
+               <c-my-expense></c-my-expense>
+           </lightning-tab>
+           <lightning-tab label="Expense Request" value="Expense Request">
+               <c-expense-request></c-expense-request>
+           </lightning-tab>
+           
+       </lightning-tabset>
+    </lightning-card>
 </template>

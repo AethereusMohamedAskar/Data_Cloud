@@ -1,0 +1,14 @@
+<template>
+<template lwc:if={dataObjects}>
+    
+       <div style="height: 250px;">
+        <lightning-datatable
+            key-field="PaymentID__c"
+            data={dataObjects.data}
+            columns={paymentColumns}>
+        </lightning-datatable>
+    </div>
+   
+
+</template>
+</template>
